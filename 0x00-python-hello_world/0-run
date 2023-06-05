@@ -3,8 +3,4 @@
 #Execute the python script referenced by PYFILE
 
 
-python3 <<END
-
-print("Best School")
-
-END
+python3 $PYFILE

@@ -1,5 +1,2 @@
 #!/bin/bash
-
-
-
-python3 "$PYCODE2"
+python3 $PYCODE2

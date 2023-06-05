@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#Execute the python script referenced by PYFILE
+python3 "$PYFILE"

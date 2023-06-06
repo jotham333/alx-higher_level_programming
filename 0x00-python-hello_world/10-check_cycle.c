@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * check_cycle - checks if a code has cycle 
+ * check_cycle - checks if a code has cycle
  *
  * @head: the head of the linked list
  *
@@ -21,10 +21,10 @@ int check_cycle(listint_t *head)
 	}
 	while (slow != NULL && fast != NULL && fast->next != NULL)
 	{
-	
+
 		if (slow == fast)
 		{
-			return (1);	
+			return (1);
 		}
 		slow = slow->next;
 		fast = fast->next->next;

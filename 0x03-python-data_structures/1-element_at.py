@@ -3,14 +3,16 @@
 def element_at(my_list, idx):
 
     """
-    element_at: retrieve the element at a specific index in the list
+    element_at: retrieve the element at a
+    specific index in the list
 
     Args:
         my_list: the list
         idx: the index
 
     Returns:
-        The element at the given index, or None if the index is out of range
+        The element at the given index, or None if the
+        index is out of range
     """
     list_len = len(my_list)
 

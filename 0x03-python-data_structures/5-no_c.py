@@ -12,10 +12,5 @@ def no_c(my_string):
 
     """
 
-    for i in my_string:
-        if i == 'c' or i == 'C':
-            index = my_string.index(i)
-            new_string = my_string[:index] + my_string[index+1:]
-            return new_string
-        
-    return my_string
+    new_string = my_string.translate({ord(i): None for i in 'cC'}) 
+    return new_string

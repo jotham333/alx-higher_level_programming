@@ -12,9 +12,11 @@ def multiple_returns(sentence):
     """
     str_len = len(sentence)
     first_char = sentence[0]
+    my_tuple = ()
 
     if str_len == 0:
-        first_char = None
-        return first_char
+        my_tuple = 0, "None"
 
-    return str_len, first_char
+    else:
+        my_tuple = str_len, first_char
+        return my_tuple

@@ -2,7 +2,7 @@
 """Defines an matrix division function."""
 
 def matrix_divided(matrix, div):
-      """Divide all elements of a matrix.
+    """Divide all elements of a matrix.
 
           Args:
         matrix (list): A list of lists of ints or floats.
@@ -15,12 +15,12 @@ def matrix_divided(matrix, div):
     Returns:
         A new matrix representing the result of the division.
     """
-    
+
     # Check if matrix is a list of lists of integers/floats
     if not isinstance(matrix, list) or any(not isinstance(row, list)
-            for row in matrix):
+        for row in matrix):
         raise TypeError("matrix must be a matrix (list of lists) of"
-        "integers/floats")
+                "integers/floats")
 
     # Check if each row of the matrix has the same size
     row_size = len(matrix[0])
@@ -31,7 +31,7 @@ def matrix_divided(matrix, div):
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
 
-     # Check if div is not zero
+    # Check if div is not zero
     if div == 0:
         raise ZeroDivisionError("division by zero")
 

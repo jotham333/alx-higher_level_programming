@@ -13,7 +13,7 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
-     def __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
 
         Args:
@@ -78,7 +78,7 @@ class Rectangle:
             return (rect_1)
         return (rect_2)
 
-     def __str__(self):
+    def __str__(self):
         """Return the printable representation of the Rectangle.
 
         Represents the rectangle with the # character.

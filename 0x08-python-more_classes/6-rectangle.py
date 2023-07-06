@@ -11,7 +11,7 @@ class Rectangle:
 
     number_of_instances = 0
 
-     def __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
 
         Args:
@@ -73,7 +73,7 @@ class Rectangle:
                 rect.append("\n")
         return ("".join(rect))
 
-     def __repr__(self):
+    def __repr__(self):
         """Return the string representation of the Rectangle."""
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"

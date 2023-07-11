@@ -1,0 +1,12 @@
+import unittest
+
+class TestBaseGeometryDocstring(unittest.TestCase):
+    def test_docstring(self):
+        docstring = BaseGeometry.__doc__
+        self.assertIsNotNone(docstring, "Docstring not found.")
+        self.assertIsInstance(docstring, str, "Docstring should be a string.")
+        self.assertNotEqual(len(docstring), 0, "Docstring should not be empty.")
+        self.assertIn("BaseGeometry class", docstring, "Incorrect docstring content.")
+
+if __name__ == "__main__":
+    unittest.main()

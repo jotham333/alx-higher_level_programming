@@ -1,3 +1,4 @@
+#!/usr/bin/node
 function calculateFactorial (n) {
   // Base case: factorial of 0 or NaN is 1
   if (isNaN(n) || n === 0) {

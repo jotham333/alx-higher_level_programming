@@ -3,7 +3,8 @@ import sys
 
 
 if len(sys.argv) != 4:
-    print("Usage: python 0-select_states.py <username> <password> <database_name>")
+    print("Usage: python 0-select_states.py
+          < username > < password > < database_name >")
     sys.exit(1)
 
 username = sys.argv[1]
@@ -11,7 +12,8 @@ password = sys.argv[2]
 database_name = sys.argv[3]
 
 try:
-    db = MySQLdb.connect(host ="localhost", user="jotham333", passwd="jotham087", db="hbtn_0e_0_usa")
+    db = MySQLdb.connect(host="localhost", user="jotham333",
+                         passwd="jotham087", db="hbtn_0e_0_usa")
     cur = db.cursor()
 
     cur.execute("SELECT * FROM states ORDER BY states.id;")

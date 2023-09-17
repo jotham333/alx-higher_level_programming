@@ -13,14 +13,11 @@ if __name__ == "__main__":
             port=3306
             )
     cur = db.cursor()
-    query = "SELECT * FROM states WHERE name = %s"
-    cur.execute(query, (sys.argv[4],))
+    query = "SELECT * FROM states WHERE name LIKE BINARY '{}'"
+    cur.execute(query .format(sys.argv[4],))
     states = cur.fetchall()
-    if states:
-        for state in states:
-            print(state)
-    else:
-        print("No matching state found")
+    for state in states:
+        print(state)
 
     cur.close()
     db.close()
